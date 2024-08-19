@@ -9,12 +9,17 @@ import FunctionClick from './components/FunctionClick.jsx';
 import ClassClick from './components/ClassClick.jsx';
 import EventBind from './components/EventBind.jsx';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting.jsx';
+import NameList from './components/NameList.jsx';
 
 export default function App() {
   return (
     <div className="App">
+      
+      <NameList />
 
-      <ParentComponent />
+      {/* <UserGreeting /> */}
+      {/* <ParentComponent /> */}
 
       {/* <FunctionClick /> */
       /* <ClassClick /> */
