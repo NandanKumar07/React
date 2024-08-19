@@ -5,11 +5,22 @@ import Welcome from "./components/Welcome.jsx";
 import Hello from "./components/Hello.jsx";
 import Message from "./components/Message.jsx";
 import Counter from "./components/Counter.jsx";
+import FunctionClick from './components/FunctionClick.jsx';
+import ClassClick from './components/ClassClick.jsx';
+import EventBind from './components/EventBind.jsx';
+import ParentComponent from './components/ParentComponent';
 
 export default function App() {
   return (
     <div className="App">
-      <Counter />
+
+      <ParentComponent />
+
+      {/* <FunctionClick /> */
+      /* <ClassClick /> */
+      /* <EventBind /> */}
+
+      {/* <Counter /> */}
 
       {/* <Message/> */}
 
@@ -18,13 +29,13 @@ export default function App() {
       </Greet>
       <Greet name="Henry" heroname="Superman">
         <button>Action</button>
-      </Greet>
-      <Greet name="Chris" heroname="Captain America" />
+      </Greet> */}
+      {/* <Greet name="Chris" heroname="Captain America" /> */}
       
-      <Welcome name="Bruce" heroname="Batman"/>
-      <Welcome name="Henry" heroname="Superman"/>
-      <Welcome name="Chris" heroname="Captain America" />
-       */}
+      {/*<Welcome name="Bruce" heroname="Batman"/>
+      <Welcome name="Henry" heroname="Superman"/> */}
+      {/* <Welcome name="Chris" heroname="Captain America" /> */}
+       
       {/* <Hello/> */}
     </div>
   );

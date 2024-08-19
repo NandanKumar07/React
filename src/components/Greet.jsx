@@ -5,12 +5,12 @@ import React from "react";
 // }
 
 // if we use export then we cannot be able to change the components real name in the App.js
-const Greet = (props) => {
-  console.log(props);
+const Greet = props => {
+  const {name, heroname} = props
   return (
     <div>
       <h1>
-        Hello {props.name} How's your {props.heroname} suit
+        Hello {name} How's your {heroname} suit
       </h1>
       {props.children}
     </div>
