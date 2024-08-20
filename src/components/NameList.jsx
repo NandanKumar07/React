@@ -25,12 +25,17 @@ function NameList() {
 {/* const names = ['Bruce', 'Diana', 'Henry', 'Clark', 'Peter']
   const nameList = names.map(name => <h2> { name } </h2>); */}
 
-  const personList = persons.map(persons => (
-    <Person person = {persons}></Person>
-  ))
+{/*const personList = persons.map(persons => (
+    <Person key = {persons.id} person = {persons}></Person>
+  )) */}
+
+  const names = ['Bruce', 'Diana', 'Clark']
+
+  const nameList = names.map((name, index) => <h2 key = {index}>{index} {name}</h2>)
   return (
     <div>
-      { personList }
+      {/*{ personList }*/}
+      { nameList }
     </div>
   )
 }
